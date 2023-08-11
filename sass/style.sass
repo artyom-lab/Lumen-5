@@ -2260,8 +2260,6 @@ h1, .h1
 	color: $color-sidebar
 	display: flex
 	flex-direction: column
-	border: 1px solid $color-block
-	box-shadow: 0 6px 6px rgba(0, 0, 0, .2)
 	z-index: 1039
 	transition: $transition
 	background-color: $bg-body
@@ -2272,7 +2270,6 @@ h1, .h1
 	.dark-mode &
 		background: $color-darkmode
 		color: $color-white
-		border: 1px solid $color-border-dark
 	@media (min-width: 1200px)
 		width: 275px
 		left: -275px
@@ -2434,23 +2431,52 @@ h1, .h1
 
 .pitch-time
 	text-align: center
-	position: relative
 	.time-box
-		position: absolute
-		padding: 16px
-		top: 50%
-		left: 50%
-		transform: translate(-50%, -50%)
 		.title
 			font-weight: bold
 			color: #d9713a
-			font-size: 24px
+			font-size: 34px
 			@media (max-width: 575.98px)
-				font-size: 20px
+				font-size: 30px
 		.comment
 			font-size: 10px
+			padding-top: 4px
+	.progress
+		margin-top: 14px
+		height: 24px
+		border-radius: 5px
+		position: relative
+		background: $color-white
+		overflow: initial
+		border: 1px solid $color-border-input
+		&:before 
+			content: ""
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 8px
+			height: 8px
+			border-radius: 100px
+			background: $color-white
+			border: 1px solid #C04F20
+		.progress-bar
+			background: #d9713a	
+			height: 24px
+			border: 1px solid #C04F20
+			border-right: 0
+			margin-top: -1px
+			margin-bottom: -1px
+			margin-left: -1px
+			border-top-left-radius: 5px
+			border-bottom-left-radius: 5px
 
 .section-search
 	margin-bottom: 20px
 	@media (max-width: 575.98px)
 		margin-bottom: 15px
+
+.border-5
+	border-bottom: 5px solid $color-block
+	.dark-mode &
+		border-bottom: 5px solid $color-border-dark
