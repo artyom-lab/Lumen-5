@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap')
+
 $transition: .3s
 $box: 0 1px 1px rgba(0, 0, 0, .1)
 
@@ -94,6 +95,9 @@ body
 				transform: translateX(220px)
 			.sidebar-1, .content
 				transform: translateX(50px)
+			.content
+				pointer-events: none
+				opacity: .7
 		&.menubar-pitches
 			padding-left: 0 !important
 			@media (max-width: 991.98px)
@@ -2480,3 +2484,113 @@ h1, .h1
 	border-bottom: 5px solid $color-block
 	.dark-mode &
 		border-bottom: 5px solid $color-border-dark
+
+// PITCH-SPORTS-RESULTS
+
+.pointer-none
+	pointer-events: none 
+
+.pitch-box
+	background: $color-white
+	border-radius: 5px
+	border: 1px solid $color-promotion
+	padding: 15px
+	font-size: 13px
+	.dark-mode &
+		background: $color-darkmode2
+		border-color: rgba(196, 196, 196, 0.35)	
+
+.nav-pitches
+	.nav-link
+		border-color: transparent
+		padding: 8px 12px 8px 42px
+		margin-bottom: 12px
+		.pills-number
+			background: $color-white
+			color: $color-border-2
+			border: 1px solid $color-border-2
+			width: 22px
+			height: 22px
+			line-height: 22px
+			top: 7px
+			left: 10px
+		&:hover, &.active 
+			.pills-number
+				color: $color-white
+				border-color: $color-checkbox
+		&.active
+			background: $color-white
+		&.done
+			.pills-number
+				.dark-mode &
+					background: $color-black
+
+// SELECT2
+
+.select2-container
+	display: block
+	width: auto !important
+	.select2-selection--single
+		background: $bg-gray-2
+		border: 1px solid $color-promotion
+		padding: 0px 12px
+		transition: $transition
+		height: 39px
+		.select2-selection__rendered
+			padding-left: 0
+			padding-right: 0
+	.selection
+		display: block
+.select2-container--default .select2-selection--single
+	border-radius: 5px
+	.select2-selection__rendered, .select2-selection__placeholder
+		color: $color-gray2
+		line-height: 39px
+		font-size: 13px
+	.select2-selection__arrow, .select2-selection__clear
+		display: none
+.select2-container--open 
+	.select2-dropdown
+		border: 1px solid $color-promotion
+		border-radius: 8px
+		overflow: hidden
+		padding: 4px
+		top: -39px
+		padding: 0
+		z-index: 1050
+		.select2-search--dropdown
+			padding: 0
+			.select2-search__field
+				border: 0
+				border-bottom: 1px solid $color-promotion
+				color: $color-black
+				border-radius: 8px 8px 0 0
+				padding: 4px 12px
+				height: 39px
+				font-size: 13px
+				background: $color-white
+		.select2-results
+			padding: 4px
+			.select2-results__options
+				max-height: 234px
+				padding: 0 4px
+				&::-webkit-scrollbar
+					width: 4px
+					height: 4px
+				&::-webkit-scrollbar-track
+					background-color: transparent
+					border-radius: 2px
+				&::-webkit-scrollbar-thumb
+					background-color: $color-promotion
+					border-radius: 2px	
+				.select2-results__option
+					font-size: 13px
+					padding: 4px 6px
+					color: $color-gray2
+					background-color: transparent
+				.select2-results__option--highlighted.select2-results__option--selectable
+					background: transparent
+					&:hover, &.select2-results__option--selected, &.select2-results__option--highlighted.select2-results__option--selectable
+						background-color: $bg-gray-2
+						border-radius: 5px
+						border: 1px solid $color-promotion
