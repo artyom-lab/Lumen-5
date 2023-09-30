@@ -1246,6 +1246,9 @@ h1, .h1 {
   border-radius: 8px;
   top: 110%;
   background: #FFF; }
+  @media (max-width: 1199.98px) {
+    .dropdown-2 .dropdown-menu {
+      transform: translate3d(0px, 40px, 0px) !important; } }
   @media (max-width: 575.98px) {
     .dropdown-2 .dropdown-menu {
       width: 100%; } }
@@ -1608,6 +1611,9 @@ h1, .h1 {
   box-shadow: none;
   border: 1px solid rgba(196, 196, 196, 0.35);
   border-top: 0; }
+  @media (max-width: 1199.98px) {
+    .search-dropdown {
+      transform: translate3d(0px, 40px, 0px) !important; } }
   .search-dropdown .loc-border {
     border-top: 1px solid rgba(196, 196, 196, 0.35);
     padding: 14px 0; }
