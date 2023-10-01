@@ -898,7 +898,7 @@ h1, .h1 {
       content: ""; }
 
 .links {
-  background-image: url(../img/icon-13.png);
+  background-image: url(../img/icon-13.webp);
   background-size: cover;
   display: inline-block;
   border-radius: 100px;
@@ -907,10 +907,10 @@ h1, .h1 {
   margin-right: 2px; }
 
 .links-2 {
-  background-image: url(../img/icon-14.png); }
+  background-image: url(../img/icon-14.webp); }
 
 .links-3 {
-  background-image: url(../img/icon-15.png); }
+  background-image: url(../img/icon-15.webp); }
 
 .colorpoint {
   width: 8px;
@@ -1378,7 +1378,7 @@ h1, .h1 {
   font-weight: bold;
   cursor: pointer;
   border-radius: 5px;
-  background: #f1f1f6 url(../img/arrow.png) no-repeat right 0.75rem center/8px 6px; }
+  background: #f1f1f6 url(../img/arrow.webp) no-repeat right 0.75rem center/8px 6px; }
   .dark-mode .form-inline-1 .custom-select {
     background-color: #313943;
     border: 1px solid #313943;
@@ -1476,7 +1476,7 @@ h1, .h1 {
     color: #FFF; }
 
 .form-inline-2 .custom-select {
-  background: #FFF url(../img/arrow.png) no-repeat right 0.75rem center/8px 6px;
+  background: #FFF url(../img/arrow.webp) no-repeat right 0.75rem center/8px 6px;
   padding-top: 4px;
   padding-bottom: 4px;
   height: 34px;
@@ -1484,7 +1484,7 @@ h1, .h1 {
   .form-inline-2 .custom-select:focus {
     box-shadow: none; }
   .dark-mode .form-inline-2 .custom-select {
-    background: #313946 url(../img/arrow.png) no-repeat right 0.75rem center/8px 6px;
+    background: #313946 url(../img/arrow.webp) no-repeat right 0.75rem center/8px 6px;
     border-color: #313946;
     color: #FFF; }
 
