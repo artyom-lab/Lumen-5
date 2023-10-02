@@ -283,6 +283,13 @@ h1, .h1
 		padding-left: 2px !important
 		padding-right: 2px !important
 
+.row-6
+	margin-left: -6px !important
+	margin-right: -6px !important
+	> [class*="col"]
+		padding-left: 6px !important
+		padding-right: 6px !important
+
 .sidebar-top
 	padding: 10px 15px
 	background: #313b42
@@ -2531,10 +2538,11 @@ h1, .h1
 .select2-container
 	display: block
 	width: auto !important
+	min-width: 45px !important	
 	.select2-selection--single
 		background: $color-white
 		border: 1px solid $color-promotion
-		padding: 0px 12px
+		padding: 0px 8px
 		transition: $transition
 		height: 38px
 		.dark-mode &
@@ -2550,8 +2558,6 @@ h1, .h1
 		color: $color-gray2
 		line-height: 38px
 		font-size: 13px
-		.dark-mode &
-			color: $color-white
 	.select2-selection__arrow, .select2-selection__clear
 		display: none
 .select2-container--open 
@@ -2582,7 +2588,7 @@ h1, .h1
 				background: $color-darkmode2
 			.select2-results__options
 				max-height: 234px
-				padding: 0 4px
+				padding: 0 
 				&::-webkit-scrollbar
 					width: 4px
 					height: 4px
@@ -2596,6 +2602,7 @@ h1, .h1
 					font-size: 13px
 					padding: 4px 6px
 					color: $color-gray2
+					// white-space: nowrap
 					background-color: transparent
 				.select2-results__option--highlighted.select2-results__option--selectable
 					background: transparent
@@ -2658,8 +2665,30 @@ h1, .h1
 	padding: 6px 8px
 	text-align: center
 	margin: auto
+	-moz-appearance: textfield
+	&::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+		-webkit-appearance: none !important
 	.dark-mode &
 		background: $color-darkmode2
 		color: $color-white
 	&:focus
 		box-shadow: none
+	&.input-games-small
+		width: 60px
+	&.input-games-medium
+		width: 85px
+
+.w-85
+	min-width: 85px
+.w-150
+	min-width: 150px
+.w-200
+	min-width: 200px
+
+.cross-link
+	width: 18px
+	display: inline-block
+	position: relative
+	img	
+		position: absolute
+		top: 20px

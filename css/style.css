@@ -287,6 +287,13 @@ h1, .h1 {
     padding-left: 2px !important;
     padding-right: 2px !important; }
 
+.row-6 {
+  margin-left: -6px !important;
+  margin-right: -6px !important; }
+  .row-6 > [class*="col"] {
+    padding-left: 6px !important;
+    padding-right: 6px !important; }
+
 .sidebar-top {
   padding: 10px 15px;
   background: #313b42;
@@ -2455,11 +2462,12 @@ h1, .h1 {
 
 .select2-container {
   display: block;
-  width: auto !important; }
+  width: auto !important;
+  min-width: 45px !important; }
   .select2-container .select2-selection--single {
     background: #FFF;
     border: 1px solid #e0e0e0;
-    padding: 0px 12px;
+    padding: 0px 8px;
     transition: 0.3s;
     height: 38px; }
     .dark-mode .select2-container .select2-selection--single {
@@ -2476,8 +2484,6 @@ h1, .h1 {
     color: #6c7884;
     line-height: 38px;
     font-size: 13px; }
-    .dark-mode .select2-container--default .select2-selection--single .select2-selection__rendered, .dark-mode .select2-container--default .select2-selection--single .select2-selection__placeholder {
-      color: #FFF; }
   .select2-container--default .select2-selection--single .select2-selection__arrow, .select2-container--default .select2-selection--single .select2-selection__clear {
     display: none; }
 
@@ -2508,7 +2514,7 @@ h1, .h1 {
       background: #1a1d21; }
     .select2-container--open .select2-dropdown .select2-results .select2-results__options {
       max-height: 234px;
-      padding: 0 4px; }
+      padding: 0; }
       .select2-container--open .select2-dropdown .select2-results .select2-results__options::-webkit-scrollbar {
         width: 4px;
         height: 4px; }
@@ -2576,11 +2582,35 @@ h1, .h1 {
   font-size: 13px;
   padding: 6px 8px;
   text-align: center;
-  margin: auto; }
+  margin: auto;
+  -moz-appearance: textfield; }
+  .input-games::-webkit-outer-spin-button, .input-games::-webkit-inner-spin-button {
+    -webkit-appearance: none !important; }
   .dark-mode .input-games {
     background: #1a1d21;
     color: #FFF; }
   .input-games:focus {
     box-shadow: none; }
+  .input-games.input-games-small {
+    width: 60px; }
+  .input-games.input-games-medium {
+    width: 85px; }
+
+.w-85 {
+  min-width: 85px; }
+
+.w-150 {
+  min-width: 150px; }
+
+.w-200 {
+  min-width: 200px; }
+
+.cross-link {
+  width: 18px;
+  display: inline-block;
+  position: relative; }
+  .cross-link img {
+    position: absolute;
+    top: 20px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -34,7 +34,7 @@ $(".close-metrics").on("click", function(){
 });
 
 $(".close-box").on("click", function(){
-  $(this).closest(".pitch-box").hide();
+  $(this).closest(".box-hide").hide();
 });
 
 $('#sidebar-switcher').on('change', function() {
