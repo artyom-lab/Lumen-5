@@ -2491,9 +2491,6 @@ h1, .h1
 
 // PITCH-SPORTS-RESULTS
 
-.pointer-none
-	pointer-events: none 
-
 .pitch-box
 	background: $color-white
 	border-radius: 5px
@@ -2535,11 +2532,13 @@ h1, .h1
 	display: block
 	width: auto !important
 	.select2-selection--single
-		background: $bg-gray-2
+		background: $color-white
 		border: 1px solid $color-promotion
 		padding: 0px 12px
 		transition: $transition
-		height: 39px
+		height: 38px
+		.dark-mode &
+			background: $color-darkmode2
 		.select2-selection__rendered
 			padding-left: 0
 			padding-right: 0
@@ -2549,8 +2548,10 @@ h1, .h1
 	border-radius: 5px
 	.select2-selection__rendered, .select2-selection__placeholder
 		color: $color-gray2
-		line-height: 39px
+		line-height: 38px
 		font-size: 13px
+		.dark-mode &
+			color: $color-white
 	.select2-selection__arrow, .select2-selection__clear
 		display: none
 .select2-container--open 
@@ -2558,7 +2559,7 @@ h1, .h1
 		border: 1px solid $color-promotion
 		border-radius: 8px
 		overflow: hidden
-		top: -39px
+		top: -38px
 		padding: 0
 		z-index: 1029
 		.select2-search--dropdown
@@ -2569,11 +2570,16 @@ h1, .h1
 				color: $color-black
 				border-radius: 8px 8px 0 0
 				padding: 4px 12px
-				height: 39px
+				height: 38px
 				font-size: 13px
 				background: $color-white
+				.dark-mode &
+					background: $color-darkmode2
+					color: $color-white
 		.select2-results
 			padding: 4px
+			.dark-mode &
+				background: $color-darkmode2
 			.select2-results__options
 				max-height: 234px
 				padding: 0 4px
@@ -2597,3 +2603,63 @@ h1, .h1
 						background-color: $bg-gray-2
 						border-radius: 5px
 						border: 1px solid $color-promotion
+						.dark-mode &
+							background: $color-sidebar-darkmode
+							color: $color-white
+
+.table-sports
+	.dark-mode &
+		color: $color-white
+	th, td
+		vertical-align: middle
+		padding-top: 6px 
+		padding-bottom: 6px
+		white-space: nowrap
+	tbody 
+		tr 
+			th:first-child
+				width: 28px
+		.img-team-table
+			width: 16px
+			margin: 0 4px
+			display: inline-block
+			vertical-align: middle
+			text-align: center
+			img 
+				max-width: 100%
+
+.table-mini
+	text-align: center
+	.dark-mode &
+		color: $color-white
+	thead
+		th, td
+			padding: 2px 8px
+	tbody
+		th, td
+			white-space: nowrap
+			vertical-align: middle
+			padding: 8px 8px 0
+			border-right: 1px solid $color-border
+		tr:first-child
+			border-bottom: 1px solid $color-border
+			th, td 
+				padding: 0 8px 8px
+		tr
+			th, td
+				&:first-child, &:last-child
+					border-right: 0
+
+.input-games
+	height: 38px
+	width: 40px
+	border: 1px solid $color-border
+	font-size: 13px
+	padding: 6px 8px
+	text-align: center
+	margin: auto
+	.dark-mode &
+		background: $color-darkmode2
+		color: $color-white
+	&:focus
+		box-shadow: none

@@ -165,31 +165,6 @@ $(document).ready(function () {
   });
 });
 
-// CALENDAR
-
-$('[data-toggle="popover"]').popover()
-
-var start = moment("03/15/2023"),
-    end   = moment("04/07/2023");
-
-function cb(start, end) {
-    $('#reportrange').html(start.format('MMM D, YYYY') + ' - ' + end.format('MMM D, YYYY'));
-};
-
-$('#reportrange').daterangepicker({
-    startDate: start,
-    endDate: end,
-}, cb);
-
-cb(start, end);
-
-$('input[name="birthday1"]').daterangepicker({
-  singleDatePicker: true,
-  showDropdowns: true,
-  minYear: 2000,
-  maxYear: parseInt(moment().format('YYYY'),10)
-});
-
   // SELECT2
 
     $("select.select2").select2({
@@ -266,6 +241,31 @@ $('input[name="birthday1"]').daterangepicker({
     this.$dropdownContainer.css(css);
   };
 })(window.jQuery);
+
+// CALENDAR
+
+$('[data-toggle="popover"]').popover()
+
+var start = moment("03/15/2023"),
+    end   = moment("04/07/2023");
+
+function cb(start, end) {
+    $('#reportrange').html(start.format('MMM D, YYYY') + ' - ' + end.format('MMM D, YYYY'));
+};
+
+$('#reportrange').daterangepicker({
+    startDate: start,
+    endDate: end,
+}, cb);
+
+cb(start, end);
+
+$('input[name="birthday1"]').daterangepicker({
+  singleDatePicker: true,
+  showDropdowns: true,
+  minYear: 2000,
+  maxYear: parseInt(moment().format('YYYY'),10)
+});
 
 });
 
