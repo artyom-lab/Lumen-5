@@ -2584,8 +2584,9 @@ h1, .h1 {
   text-align: center;
   margin: auto;
   -moz-appearance: textfield; }
-  .input-games::-webkit-outer-spin-button, .input-games::-webkit-inner-spin-button {
-    -webkit-appearance: none !important; }
+  .input-games::-webkit-outer-spin-button, .input-games::-webkit-inner-spin-button, .input-games::-webkit-calendar-picker-indicator, .input-games::-webkit-appearance {
+    -webkit-appearance: none !important;
+    display: none !important; }
   .dark-mode .input-games {
     background: #1a1d21;
     color: #FFF; }
@@ -2612,5 +2613,9 @@ h1, .h1 {
   .cross-link img {
     position: absolute;
     top: 20px; }
+
+.box-hide > .row {
+  flex-wrap: nowrap;
+  overflow: auto; }
 
 /*# sourceMappingURL=style.css.map */

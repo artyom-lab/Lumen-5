@@ -2666,8 +2666,9 @@ h1, .h1
 	text-align: center
 	margin: auto
 	-moz-appearance: textfield
-	&::-webkit-outer-spin-button, &::-webkit-inner-spin-button
+	&::-webkit-outer-spin-button, &::-webkit-inner-spin-button, &::-webkit-calendar-picker-indicator, &::-webkit-appearance
 		-webkit-appearance: none !important
+		display: none !important
 	.dark-mode &
 		background: $color-darkmode2
 		color: $color-white
@@ -2692,3 +2693,8 @@ h1, .h1
 	img	
 		position: absolute
 		top: 20px
+
+.box-hide
+	> .row
+		flex-wrap: nowrap
+		overflow: auto
