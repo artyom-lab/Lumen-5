@@ -2614,8 +2614,9 @@ h1, .h1 {
     position: absolute;
     top: 20px; }
 
-.box-hide > .row {
-  flex-wrap: nowrap;
-  overflow: auto; }
+@media (max-width: 1199.98px) {
+  .box-hide > .row {
+    flex-wrap: nowrap;
+    overflow: auto; } }
 
 /*# sourceMappingURL=style.css.map */
