@@ -273,11 +273,15 @@ $('input[name="birthday1"]').daterangepicker({
       allowClear: true
     });
 
-$("#time").inputmask({
-  alias: "datetime",
-  inputFormat: "mm:ss",
-  // hourFormat: "12"
-});
+// INPUTMASK
+
+// $("#time").inputmask({
+//   alias: "datetime",
+//   inputFormat: "mm:ss",
+//   hourFormat: "12"
+// });
+
+$(".input-time").inputmask("99:99",{numericInput:true, placeholder:"0"});
 
 });
 

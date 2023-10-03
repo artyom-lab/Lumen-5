@@ -2581,7 +2581,7 @@ h1, .h1 {
   border: 1px solid #dedede;
   font-size: 13px;
   padding: 6px 8px;
-  text-align: center;
+  text-align: center !important;
   margin: auto;
   -moz-appearance: textfield; }
   .input-games::-webkit-outer-spin-button, .input-games::-webkit-inner-spin-button, .input-games::-webkit-calendar-picker-indicator, .input-games::-webkit-appearance {
