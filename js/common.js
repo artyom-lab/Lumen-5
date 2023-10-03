@@ -37,6 +37,10 @@ $(".close-box").on("click", function(){
   $(this).closest(".box-hide").hide();
 });
 
+$(".btn-play").on("click", function(){
+  $(this).parents(".hidden-container").children(".box-hidden").show();
+});
+
 $('#sidebar-switcher').on('change', function() {
   if ($(this).is(':checked')) 
     $('.sidebar-2').addClass('sidebar-absolute');
@@ -268,6 +272,12 @@ $('input[name="birthday1"]').daterangepicker({
       dropdownPosition: 'below',
       allowClear: true
     });
+
+$("#time").inputmask({
+  alias: "datetime",
+  inputFormat: "mm:ss",
+  // hourFormat: "12"
+});
 
 });
 

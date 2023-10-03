@@ -2619,4 +2619,7 @@ h1, .h1 {
     flex-wrap: nowrap;
     overflow: auto; } }
 
+.box-hidden {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */

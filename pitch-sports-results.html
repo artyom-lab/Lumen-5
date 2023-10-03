@@ -1740,7 +1740,7 @@
 										<div class="cart-content py-4 p-xl-4">	
 											<div class="fz-15 font-weight-bold text-uppercase">Scoring Plays</div>
 											<p>Enter the scoring plays for each team. Scoring plays are divided by team.</p>
-											<div class="mb-4">
+											<div class="hidden-container mb-4">
 												<div class="mb-2"><b>Marist Redhawks Scoring Plays</b></div>
 												<div class="box-hide mb-3">
 													<div class="row row-6">
@@ -1763,7 +1763,7 @@
 														</div>
 														<div class="col-auto mb-2">
 															<div class="mb-1"><b>Time</b></div>
-															<input type="time" class="form-control input-games input-games-small" placeholder="0:00"> 
+															<input type="datetime" class="form-control input-games input-games-small"> 
 														</div>
 														<div class="col-auto mb-2">
 															<div class="mb-1"><b>Scoring Type</b></div>
@@ -2044,9 +2044,84 @@
 														</div>
 													</div>
 												</div>
-												<button class="btn btn-primary btn-update ml-4 py-2 wave">New Scoring Play</button>
+												<div class="box-hide box-hidden mb-3">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Quarter</b></div>
+															<div class="select-box">
+																<select class="select2" data-placeholder="Q1">
+																	<option></option>
+									                <option value="0">Q1</option>
+									                <option value="1">Q2</option>
+									                <option value="2">Q3</option>
+									                <option value="3">Q4</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Time</b></div>
+															<input type="datetime" class="form-control input-games input-games-small"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Scoring Type</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Scoring Type">
+																	<option></option>
+									                <option value="0">TD (Rush) 1</option>
+									                <option value="1">TD (INT)</option>
+									                <option value="2">TD (Pass)</option>
+									                <option value="3">TD (Fum Rec - DEF)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Rushing Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Rushing Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Yards</b></div>
+															<input type="text" class="form-control input-games" placeholder="" min="0" max="99">	 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt / 2pt</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Kick (Made)">
+																	<option></option>
+									                <option value="0">Kick (Made)</option>
+									                <option value="1">2pt (Made - Pass)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Xtr Pt Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<button class="btn btn-primary btn-update btn-play ml-4 py-2 wave">New Scoring Play</button>
 											</div>
-											<div class="mb-4">
+											<div class="hidden-container mb-4">
 												<div class="mb-2"><b>Glenbard West Hilltoppers Scoring Plays</b></div>
 												<div class="box-hide mb-3">
 													<div class="row row-6">
@@ -2348,7 +2423,82 @@
 														</div>
 													</div>
 												</div>
-												<button class="btn btn-primary btn-update ml-4 py-2 wave">New Scoring Play</button>
+												<div class="box-hide box-hidden mb-3">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Quarter</b></div>
+															<div class="select-box">
+																<select class="select2" data-placeholder="Q1">
+																	<option></option>
+									                <option value="0">Q1</option>
+									                <option value="1">Q2</option>
+									                <option value="2">Q3</option>
+									                <option value="3">Q4</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Time</b></div>
+															<input type="datetime" class="form-control input-games input-games-small"> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Scoring Type</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Scoring Type">
+																	<option></option>
+									                <option value="0">TD (Rush) 1</option>
+									                <option value="1">TD (INT)</option>
+									                <option value="2">TD (Pass)</option>
+									                <option value="3">TD (Fum Rec - DEF)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Rushing Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Rushing Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Yards</b></div>
+															<input type="text" class="form-control input-games" placeholder="" min="0" max="99">	 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt / 2pt</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Kick (Made)">
+																	<option></option>
+									                <option value="0">Kick (Made)</option>
+									                <option value="1">2pt (Made - Pass)</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Xtr Pt Player</b></div>
+															<div class="select-box w-150">
+																<select class="select2" data-placeholder="Xtr Pt Player">
+																	<option></option>
+									                <option value="0">Corey Rasad</option>
+									                <option value="1">Chris Lofgren</option>
+									                <option value="2">Bergan Ridinger</option>
+									                <option value="3">Conor Cooke</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<button class="btn btn-primary btn-update btn-play ml-4 py-2 wave">New Scoring Play</button>
 											</div>
 										</div>
 									</div>
@@ -2460,7 +2610,7 @@
 										<div class="cart-content py-4 p-xl-4">	
 											<div class="fz-15 font-weight-bold text-uppercase">Team Individual Stats</div>
 											<p>Enter the Offensive and Defensive stats for each team.</p>
-											<div class="mb-4">
+											<div class="hidden-container mb-4">
 												<div class="mb-2"><b>Marist Redhawks Offensive Player Stats</b></div>
 												<div class="box-hide mb-2">
 													<div class="row row-6">
@@ -2495,9 +2645,42 @@
 														</div>
 													</div>
 												</div>
-												<button class="btn btn-primary btn-update ml-4 py-2 wave">New Scoring Play</button>
+												<div class="box-hide box-hidden mb-2">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Offensive Player</b></div>
+															<div class="select-box w-200">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Offensive Player 1</option>
+									                <option value="1">Offensive Player 2</option>
+									                <option value="2">Offensive Player 3</option>
+									                <option value="3">Offensive Player 4</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Rushing Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Passing Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Receiving Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+													</div>
+												</div>
+												<button class="btn btn-primary btn-update btn-play ml-4 py-2 wave">New Offensive <Pla></Pla>yer</button>
 											</div>
-											<div class="mb-4">
+											<div class="hidden-container mb-4">
 												<div class="mb-2"><b>Marist Redhawks Defensive Player Stats</b></div>
 												<div class="box-hide mb-2">
 													<div class="row row-6">
@@ -2532,9 +2715,42 @@
 														</div>
 													</div>
 												</div>
-												<button class="btn btn-primary btn-update ml-4 py-2 wave">New Scoring Play</button>
+												<div class="box-hide box-hidden mb-2">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Defensive Player</b></div>
+															<div class="select-box w-200">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Defensive Player 1</option>
+									                <option value="1">Defensive Player 2</option>
+									                <option value="2">Defensive Player 3</option>
+									                <option value="3">Defensive Player 4</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Tackles</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Sacks</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Interceptions</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+													</div>
+												</div>
+												<button class="btn btn-primary btn-update btn-play ml-4 py-2 wave">New Defensive Player</button>
 											</div>
-											<div class="mb-4">
+											<div class="hidden-container mb-4">
 												<div class="mb-2"><b>Glenbard West Hilltoppers Offensive Player Stats</b></div>
 												<div class="box-hide mb-2">
 													<div class="row row-6">
@@ -2569,9 +2785,42 @@
 														</div>
 													</div>
 												</div>
-												<button class="btn btn-primary btn-update ml-4 py-2 wave">New Scoring Play</button>
+												<div class="box-hide box-hidden mb-2">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Offensive Player</b></div>
+															<div class="select-box w-200">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Offensive Player 1</option>
+									                <option value="1">Offensive Player 2</option>
+									                <option value="2">Offensive Player 3</option>
+									                <option value="3">Offensive Player 4</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Rushing Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Passing Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Receiving Yards</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+													</div>
+												</div>
+												<button class="btn btn-primary btn-update btn-play ml-4 py-2 wave">New Offensive Player</button>
 											</div>
-											<div class="mb-4">
+											<div class="hidden-container mb-4">
 												<div class="mb-2"><b>Glenbard West Hilltoppers Defensive Player Stats</b></div>
 												<div class="box-hide mb-2">
 													<div class="row row-6">
@@ -2606,7 +2855,40 @@
 														</div>
 													</div>
 												</div>
-												<button class="btn btn-primary btn-update ml-4 py-2 wave">New Scoring Play</button>
+												<div class="box-hide box-hidden mb-2">
+													<div class="row row-6">
+														<div class="col-auto mb-2">
+															<a href="#!" class="cross-link close-box">
+																<img src="img/cross-red.webp" alt="" width="18">
+															</a>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Defensive Player</b></div>
+															<div class="select-box w-200">
+																<select class="select2" data-placeholder="">
+																	<option></option>
+									                <option value="0">Defensive Player 1</option>
+									                <option value="1">Defensive Player 2</option>
+									                <option value="2">Defensive Player 3</option>
+									                <option value="3">Defensive Player 4</option>
+																</select>
+															</div>
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Tackles</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Sacks</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+														<div class="col-auto mb-2">
+															<div class="mb-1"><b>Interceptions</b></div>
+															<input type="number" class="form-control input-games input-games-medium" placeholder=""> 
+														</div>
+													</div>
+												</div>
+												<button class="btn btn-primary btn-update btn-play ml-4 py-2 wave">New Defensive Player</button>
 											</div>
 										</div>
 									</div>
@@ -2658,6 +2940,7 @@
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
 		<script src="libs/Waves/node-waves-0.7.6.js"></script>
+		<script src="https://rawgit.com/RobinHerbots/Inputmask/5.x/dist/jquery.inputmask.js"></script>
 		<script src="js/common.js"></script>
 	</body>
 </html>
