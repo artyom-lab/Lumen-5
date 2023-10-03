@@ -2467,7 +2467,7 @@ h1, .h1 {
   .select2-container .select2-selection--single {
     background: #FFF;
     border: 1px solid #e0e0e0;
-    padding: 0px 8px;
+    padding: 0px 12px;
     transition: 0.3s;
     height: 38px; }
     .dark-mode .select2-container .select2-selection--single {
