@@ -122,24 +122,30 @@ $(".news-select").on("click", function(){
 
   $("#v-pills-first-tab").on("click", function(){
     $(this).removeClass("done");
-    $("#v-pills-second-tab, #v-pills-third-tab, #v-pills-fourth-tab").removeClass("done");
+    $("#v-pills-second-tab, #v-pills-third-tab, #v-pills-fourth-tab, #v-pills-fifth-tab").removeClass("done");
   });
 
   $("#v-pills-second-tab").on("click", function(){
     $(this).removeClass("done");
     $("#v-pills-first-tab").addClass("done");
-    $("#v-pills-third-tab, #v-pills-fourth-tab").removeClass("done");
+    $("#v-pills-third-tab, #v-pills-fourth-tab, #v-pills-fifth-tab").removeClass("done");
   });
 
   $("#v-pills-third-tab").on("click", function(){
     $(this).removeClass("done");
     $("#v-pills-first-tab, #v-pills-second-tab").addClass("done");
-    $("#v-pills-fourth-tab").removeClass("done");
+    $("#v-pills-fourth-tab, #v-pills-fifth-tab").removeClass("done");
   });
 
   $("#v-pills-fourth-tab").on("click", function(){
     $(this).removeClass("done");
     $("#v-pills-first-tab, #v-pills-second-tab, #v-pills-third-tab").addClass("done");
+    $("#v-pills-fifth-tab").removeClass("done");
+  });
+
+  $("#v-pills-fifth-tab").on("click", function(){
+    $(this).removeClass("done");
+    $("#v-pills-first-tab, #v-pills-second-tab, #v-pills-third-tab, #v-pills-fourth-tab").addClass("done");
   });
 
 // SELECT

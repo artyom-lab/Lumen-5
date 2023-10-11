@@ -2622,6 +2622,14 @@ h1, .h1 {
 .box-hidden {
   display: none; }
 
+.dark-mode .bg-white {
+  background: #313946 !important; }
+
+.image-box {
+  border-radius: 12px;
+  padding: 8px;
+  border: 1px dashed #e2e5e8; }
+
 .card-widget {
   min-height: 175px;
   width: 300px;
