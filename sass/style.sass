@@ -2269,7 +2269,7 @@ h1, .h1
 	width: 220px
 	top: 62px
 	bottom: 0
-	padding: 15px 10px 130px 60px
+	padding: 15px 4px 130px 60px
 	left: -220px
 	max-height: 100vh
 	color: $color-sidebar
@@ -2283,7 +2283,7 @@ h1, .h1
 	&::-webkit-scrollbar
 		display: none
 	.dark-mode &
-		background: $color-darkmode
+		background: $color-darkmode2
 		color: $color-white
 	@media (min-width: 1200px)
 		width: 275px
@@ -2308,99 +2308,6 @@ h1, .h1
 		transition: $transition
 		border-radius: 5px
 		font-weight: 500
-
-.select-beast
-	~ .selectize-control
-		height: 40px
-		.selectize-input
-			border: 1px solid $color-border-2
-			padding: 10px
-			transition: $transition
-			height: 40px
-			box-shadow: none
-			border-radius: 5px
-			background: $color-white
-			color: $color-black
-			.dark-mode &
-				background: $bg-darkmode
-				border: 1px solid $color-rgba
-				color: $color-white
-			&.focus	
-				border-radius: 5px 5px 0 0
-			.item 
-				overflow: hidden
-				vertical-align: middle
-				white-space: nowrap
-				text-overflow: ellipsis
-				max-width: 120px
-			input
-				vertical-align: middle
-				.dark-mode &
-					color: $color-white
-				&::-webkit-input-placeholder
-					color: $color-placeholder
-					font-weight: normal
-					.dark-mode &
-				&::-moz-placeholder
-					color: $color-placeholder
-					font-weight: normal
-				&:-ms-input-placeholder
-					color: $color-placeholder
-					font-weight: normal
-			&:after 
-				display: none
-		.selectize-dropdown
-			color: $color-black
-			border: 1px solid $color-border-2
-			border-radius: 0 0 5px 5px
-			padding: 5px
-			.dark-mode &
-				background: $bg-darkmode
-				border: 1px solid $color-rgba
-				color: $color-white
-			.option 
-				padding-left: 8px
-				padding-right: 8px
-				cursor: pointer
-				font-size: 12px
-				white-space: nowrap
-				text-overflow: ellipsis
-				overflow: hidden
-				border: 1px solid transparent
-				margin-bottom: 2px
-				&:hover, &.active
-					background-color: $bg-body
-					border-radius: 5px
-					border: 1px solid $color-border-2
-					font-weight: bold
-					.dark-mode &
-						background-color: $color-darkmode
-						border: 1px solid $color-rgba
-						color: $color-white
-
-
-.selectize-dropdown-content
-	overflow: auto
-	max-height: 130px
-	padding-right: 4px
-	&::-webkit-scrollbar
-		width: 4px
-		height: 4px
-	&::-webkit-scrollbar-track
-		background-color: transparent
-		border-radius: 2px
-	&::-webkit-scrollbar-thumb
-		background-color: $color-scroll
-		border-radius: 2px
-		.dark-mode &
-			background-color: $color-darkmode2
-	.dropdown-item 
-		padding: 5px 7px
-		font-size: 12px
-		&:active 
-			background: $color-white
-		&:hover 
-			font-weight: bold
 
 // SIGN-IN
 
@@ -2563,11 +2470,11 @@ h1, .h1
 .select2-container--open 
 	.select2-dropdown
 		border: 1px solid $color-promotion
-		border-radius: 8px
+		border-radius: 5px
 		overflow: hidden
 		top: -38px
 		padding: 0
-		z-index: 1029
+		z-index: 1039
 		.select2-search--dropdown
 			padding: 0
 			.select2-search__field
@@ -2587,8 +2494,8 @@ h1, .h1
 			.dark-mode &
 				background: $color-darkmode2
 			.select2-results__options
-				max-height: 234px
-				padding: 0 
+				max-height: 140px
+				padding-right: 4px
 				&::-webkit-scrollbar
 					width: 4px
 					height: 4px
@@ -2718,7 +2625,7 @@ h1, .h1
 	width: 300px
 	border-radius: 8px
 	background: linear-gradient(to right, #205985 0%, #13324b 100%)
-	color: #FFF
+	color: $color-white
 	padding: 18px 20px
 	position: relative
 	overflow: hidden
@@ -2740,7 +2647,7 @@ h1, .h1
 .btn-contact
 	background: #8bdc41
 	border-radius: 8px
-	color: #FFF
+	color: $color-white
 	padding: 8px
 	transition: $transition
 	border: 0

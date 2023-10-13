@@ -148,10 +148,6 @@ $(".news-select").on("click", function(){
     $("#v-pills-first-tab, #v-pills-second-tab, #v-pills-third-tab, #v-pills-fourth-tab").addClass("done");
   });
 
-// SELECT
-
-  $('.select-beast').selectize({});
-
 // CHECKBOXES
 
 $(document).ready(function () {
