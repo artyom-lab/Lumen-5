@@ -294,6 +294,13 @@ h1, .h1 {
     padding-left: 6px !important;
     padding-right: 6px !important; }
 
+.row-15 {
+  margin-left: -15px !important;
+  margin-right: -15px !important; }
+  .row-15 > [class*="col"] {
+    padding-left: 15px !important;
+    padding-right: 15px !important; }
+
 .sidebar-top {
   padding: 10px 15px;
   background: #313b42;
@@ -2367,14 +2374,21 @@ h1, .h1 {
   border: 1px solid #e0e0e0;
   padding: 15px;
   font-size: 13px; }
+  .pitch-box.pitch-box-gray {
+    padding: 10px 15px;
+    background: #f6f6fb; }
   .pitch-box.pitch-select {
-    transition: 0.3s; }
+    transition: 0.3s;
+    height: 100%; }
     .pitch-box.pitch-select:hover, .pitch-box.pitch-select.active {
       border-color: #0081ff;
       box-shadow: 0 1px 5px #0081ff; }
     @media (min-width: 992px) {
       .pitch-box.pitch-select {
         padding: 20px; } }
+    .pitch-box.pitch-select ul {
+      margin-bottom: 0;
+      padding-left: 16px; }
   .dark-mode .pitch-box {
     background: #1a1d21;
     border-color: rgba(196, 196, 196, 0.35); }
