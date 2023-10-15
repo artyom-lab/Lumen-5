@@ -2426,6 +2426,13 @@ h1, .h1
 	border: 1px solid $color-promotion
 	padding: 15px
 	font-size: 13px
+	&.pitch-select
+		transition: $transition
+		&:hover, &.active
+			border-color: $color-checkbox
+			box-shadow: 0 1px 5px $color-checkbox
+		@media (min-width: 992px)
+			padding: 20px
 	.dark-mode &
 		background: $color-darkmode2
 		border-color: rgba(196, 196, 196, 0.35)	

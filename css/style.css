@@ -2367,6 +2367,14 @@ h1, .h1 {
   border: 1px solid #e0e0e0;
   padding: 15px;
   font-size: 13px; }
+  .pitch-box.pitch-select {
+    transition: 0.3s; }
+    .pitch-box.pitch-select:hover, .pitch-box.pitch-select.active {
+      border-color: #0081ff;
+      box-shadow: 0 1px 5px #0081ff; }
+    @media (min-width: 992px) {
+      .pitch-box.pitch-select {
+        padding: 20px; } }
   .dark-mode .pitch-box {
     background: #1a1d21;
     border-color: rgba(196, 196, 196, 0.35); }
