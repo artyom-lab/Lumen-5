@@ -34,7 +34,7 @@ window.onload = function() {
     var heatmapLayer = new HeatmapOverlay(cfg);
 
     var map = new L.Map('map-canvas', {
-      center: new L.LatLng(25.6586, -80.3568),
+      center: new L.LatLng(35.6586, -90.3568),
       zoom: 4,
       layers: [baseLayer, heatmapLayer]
     });

@@ -501,8 +501,8 @@ h1, .h1 {
       background-color: #252b35; }
     @media (min-width: 1400px) {
       .sidebar-2 .sidebar-2-wrap {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
         border-radius: 14px 0 0 14px; } }
     @media (min-width: 1950px) {
@@ -512,14 +512,14 @@ h1, .h1 {
         height: 100%; } }
 
 .content {
-  padding: 20px 20px 0;
+  padding: 25px 25px 0;
   min-height: calc(100vh - 62px); }
-  @media (max-width: 575.98px) {
+  @media (max-width: 991.98px) {
     .content {
       padding: 15px 15px 0; } }
 
 .navbar {
-  padding: 0 20px 0 0;
+  padding: 0 25px 0 0;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
   @media (max-width: 991.98px) {
     .navbar {
@@ -527,7 +527,7 @@ h1, .h1 {
   .dark-mode .navbar {
     color: #FFF !important;
     background: #1c222a !important; }
-  @media (max-width: 575.98px) {
+  @media (max-width: 991.98px) {
     .navbar {
       padding-right: 15px; } }
 
@@ -680,12 +680,12 @@ h1, .h1 {
   flex-direction: column;
   border-radius: 14px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  height: calc(100% - 20px);
+  margin-bottom: 25px;
+  height: calc(100% - 25px);
   background-color: #FFF; }
   .dark-mode .cart {
     background-color: #252b35; }
-  @media (max-width: 575.98px) {
+  @media (max-width: 991.98px) {
     .cart {
       margin-bottom: 15px;
       height: calc(100% - 15px); } }
@@ -695,15 +695,24 @@ h1, .h1 {
       .cart .block {
         padding-right: 10px; } }
     .cart .block .block {
-      padding-left: 15px;
+      padding-left: 20px;
       padding-right: 0; }
+      @media (max-width: 991.98px) {
+        .cart .block .block {
+          padding-left: 15px; } }
     .cart .block:not(.scroll-wrap) {
       padding-right: 0; }
       .cart .block:not(.scroll-wrap) .block {
-        padding-right: 15px; }
+        padding-right: 20px; }
+        @media (max-width: 991.98px) {
+          .cart .block:not(.scroll-wrap) .block {
+            padding-right: 15px; } }
 
 .cart-content {
-  padding: 15px; }
+  padding: 20px; }
+  @media (max-width: 991.98px) {
+    .cart-content {
+      padding: 15px; } }
 
 .cart-content-2 {
   background: linear-gradient(to bottom, #c434fe 0%, #a502ea 100%); }
@@ -1049,11 +1058,13 @@ h1, .h1 {
   color: #FFF; }
 .table-2 th, .table-2 td {
   vertical-align: middle;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 20px;
   white-space: nowrap; }
   .table-2 th:not(:first-child), .table-2 td:not(:first-child) {
     text-align: center; }
+  @media (max-width: 991.98px) {
+    .table-2 th, .table-2 td {
+      padding: 6px 15px; } }
 .table-2 a {
   color: #222222; }
   .dark-mode .table-2 a {
@@ -1557,7 +1568,7 @@ h1, .h1 {
 .form-dropdown {
   width: 50%;
   flex-wrap: nowrap !important;
-  margin-left: 20px;
+  margin-left: 25px;
   transition: 0.3s; }
   .form-dropdown.form-transform {
     margin-left: 58px; }
@@ -1705,7 +1716,10 @@ h1, .h1 {
     background: #1c222a;
     border: 0; }
   .cart-promotion-white .cart-box {
-    padding: 24px 20px; }
+    padding: 20px; }
+    @media (max-width: 991.98px) {
+      .cart-promotion-white .cart-box {
+        padding: 15px; } }
 
 .cart-box-metrics .metric-1 {
   font-weight: bold;
@@ -1838,18 +1852,23 @@ h1, .h1 {
       margin-right: 10px; }
   .cart-map .cart-locations {
     position: absolute;
-    top: 24px;
     overflow: hidden;
-    left: 15px;
+    top: 20px;
+    left: 20px;
     box-shadow: none;
     border: 1px solid #e0e0e0;
-    height: calc(100% - 48px);
+    height: calc(100% - 40px);
     margin-bottom: 0;
     min-width: 195px; }
+    @media (max-width: 991.98px) {
+      .cart-map .cart-locations {
+        top: 15px;
+        left: 15px;
+        height: calc(100% - 30px); } }
     @media (max-width: 575.98px) {
       .cart-map .cart-locations {
         top: auto;
-        bottom: 24px;
+        bottom: 15px;
         height: 50%; } }
 
 .table-pitches tbody tr td:nth-child(3), .table-pitches tbody tr td:nth-child(4) {
@@ -2207,7 +2226,7 @@ h1, .h1 {
   width: 220px;
   top: 62px;
   bottom: 0;
-  padding: 15px 4px 130px 60px;
+  padding: 25px 4px 130px 65px;
   left: -220px;
   max-height: 100vh;
   color: #404d56;
@@ -2235,6 +2254,9 @@ h1, .h1 {
     .sidebar-edit {
       left: -220px;
       right: auto; } }
+  @media (max-width: 991.98px) {
+    .sidebar-edit {
+      padding: 15px 4px 130px 60px; } }
   .sidebar-edit .title {
     color: #000;
     text-transform: uppercase;
@@ -2329,8 +2351,8 @@ h1, .h1 {
       border-bottom-left-radius: 5px; }
 
 .section-search {
-  margin-bottom: 20px; }
-  @media (max-width: 575.98px) {
+  margin-bottom: 25px; }
+  @media (max-width: 991.98px) {
     .section-search {
       margin-bottom: 15px; } }
 

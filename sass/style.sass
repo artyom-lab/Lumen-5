@@ -499,8 +499,8 @@ h1, .h1
 		.dark-mode &
 			background-color: $color-sidebar-darkmode
 		@media (min-width: 1400px)
-			margin-top: 20px
-			margin-bottom: 20px
+			margin-top: 25px
+			margin-bottom: 25px
 			box-shadow: $box
 			border-radius: 14px 0 0 14px
 		@media (min-width: 1950px)
@@ -509,20 +509,20 @@ h1, .h1
 			height: 100%
 
 .content
-	padding: 20px 20px 0
+	padding: 25px 25px 0
 	min-height: calc(100vh - 62px)
-	@media (max-width: 575.98px)
+	@media (max-width: 991.98px)
 		padding: 15px 15px 0
 
 .navbar
-	padding: 0 20px 0 0
+	padding: 0 25px 0 0
 	box-shadow: $box
 	@media (max-width: 991.98px)
 		left: -220px
 	.dark-mode &
 		color: $color-white !important
 		background: $color-darkmode !important
-	@media (max-width: 575.98px)	
+	@media (max-width: 991.98px)	
 		padding-right: 15px
 
 .dropdown-1
@@ -670,12 +670,12 @@ h1, .h1
 	flex-direction: column
 	border-radius: 14px
 	box-shadow: $box
-	margin-bottom: 20px
-	height: calc(100% - 20px)
+	margin-bottom: 25px
+	height: calc(100% - 25px)
 	background-color: $color-white
 	.dark-mode &
 		background-color: $color-sidebar-darkmode
-	@media (max-width: 575.98px)
+	@media (max-width: 991.98px)
 		margin-bottom: 15px
 		height: calc(100% - 15px)
 	.block 
@@ -683,14 +683,20 @@ h1, .h1
 		@media (max-width: 767.98px)
 			padding-right: 10px
 		.block
-			padding-left: 15px
+			padding-left: 20px
 			padding-right: 0
+			@media (max-width: 991.98px)
+				padding-left: 15px
 		&:not(.scroll-wrap)
 			padding-right: 0
 			.block
-				padding-right: 15px
+				padding-right: 20px
+				@media (max-width: 991.98px)
+					padding-right: 15px
 .cart-content
-	padding: 15px
+	padding: 20px
+	@media (max-width: 991.98px)
+		padding: 15px
 .cart-content-2
 	background: linear-gradient(to bottom, #c434fe 0%, #a502ea 100%)
 	.dark-mode &
@@ -1078,11 +1084,12 @@ h1, .h1
 		color: $color-white
 	th, td
 		vertical-align: middle
-		padding-top: 6px
-		padding-bottom: 6px
+		padding: 6px 20px
 		white-space: nowrap
 		&:not(:first-child)
 			text-align: center
+		@media (max-width: 991.98px)
+			padding: 6px 15px
 	a 
 		color: $color-body
 		.dark-mode &
@@ -1601,7 +1608,7 @@ h1, .h1
 .form-dropdown
 	width: 50%
 	flex-wrap: nowrap !important
-	margin-left: 20px
+	margin-left: 25px
 	transition: $transition
 	&.form-transform
 		margin-left: 58px
@@ -1746,7 +1753,9 @@ h1, .h1
 		background: $color-darkmode
 		border: 0
 	.cart-box
-		padding: 24px 20px
+		padding: 20px
+		@media (max-width: 991.98px)
+			padding: 15px
 
 .cart-box-metrics
 	.metric-1
@@ -1881,17 +1890,21 @@ h1, .h1
 			margin-right: 10px
 	.cart-locations
 		position: absolute
-		top: 24px
 		overflow: hidden
-		left: 15px
+		top: 20px
+		left: 20px
 		box-shadow: none
 		border: 1px solid $color-promotion
-		height: calc(100% - 48px)
+		height: calc(100% - 40px)
 		margin-bottom: 0
 		min-width: 195px
+		@media (max-width: 991.98px)
+			top: 15px
+			left: 15px
+			height: calc(100% - 30px)
 		@media (max-width: 575.98px)
 			top: auto
-			bottom: 24px
+			bottom: 15px
 			height: 50%
 
 // PITCHES INDEX 
@@ -2269,7 +2282,7 @@ h1, .h1
 	width: 220px
 	top: 62px
 	bottom: 0
-	padding: 15px 4px 130px 60px
+	padding: 25px 4px 130px 65px
 	left: -220px
 	max-height: 100vh
 	color: $color-sidebar
@@ -2294,6 +2307,8 @@ h1, .h1
 	@media (max-width: 991.98px)	
 		left: -220px
 		right: auto
+	@media (max-width: 991.98px)
+		padding: 15px 4px 130px 60px
 	.title
 		color: $color-black
 		text-transform: uppercase
@@ -2394,8 +2409,8 @@ h1, .h1
 			border-bottom-left-radius: 5px
 
 .section-search
-	margin-bottom: 20px
-	@media (max-width: 575.98px)
+	margin-bottom: 25px
+	@media (max-width: 991.98px)
 		margin-bottom: 15px
 
 .border-5
