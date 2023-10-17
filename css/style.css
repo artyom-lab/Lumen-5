@@ -2598,7 +2598,8 @@ h1, .h1 {
 .image-box {
   border-radius: 12px;
   padding: 8px;
-  border: 1px dashed #e2e5e8; }
+  border: 1px dashed #e2e5e8;
+  max-width: 290px; }
 
 .pill-gray {
   display: inline-block;
