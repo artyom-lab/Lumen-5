@@ -102,7 +102,7 @@ if (window.matchMedia('(min-width: 1200px)').matches)
 // FORMS
 
 $(".btn-cross").on("click", function(){
-  $(".row-hidden").hide();
+  $(this).closest(".row-hidden").hide();
 });
 
 $(".btn-cancel-store").on("click", function(){
