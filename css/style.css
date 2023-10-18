@@ -2186,7 +2186,7 @@ h1, .h1 {
   height: 100%;
   border-radius: 12px;
   overflow: hidden;
-  background-color: #b9b9b9;
+  background-image: url(../img/icon-file.svg);
   background-size: cover;
   position: relative; }
   .drop-zone__thumb::after {
@@ -2622,8 +2622,8 @@ h1, .h1 {
 
 .nav-tabs-pitch {
   padding: 10px 4px 0;
-  border: 2px solid #e0e0e0;
-  margin-bottom: -2px; }
+  border: 1px solid #e0e0e0;
+  margin-bottom: -1px; }
   @media (max-width: 575.98px) {
     .nav-tabs-pitch {
       margin-bottom: 24px; } }
@@ -2634,7 +2634,7 @@ h1, .h1 {
     margin-bottom: 10px; }
 
 .pitch-tabbox {
-  border: 2px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
   border-radius: 0 0 5px 5px;
   padding: 16px; }
   @media (max-width: 767.98px) {
@@ -2653,7 +2653,7 @@ h1, .h1 {
     .tab-content-pitch .tab-block:last-child {
       padding-bottom: 0; }
     .tab-content-pitch .tab-block:not(:last-child) {
-      border-bottom: 2px solid #e0e0e0; }
+      border-bottom: 1px solid #e0e0e0; }
     .dark-mode .tab-content-pitch .tab-block {
       border-color: #313943; }
 
@@ -2692,7 +2692,7 @@ h1, .h1 {
   .selected-factoids .box-hide {
     padding-bottom: 14px; }
     .selected-factoids .box-hide:not(:last-child) {
-      border-bottom: 2px solid #e0e0e0;
+      border-bottom: 1px solid #e0e0e0;
       margin-bottom: 14px; }
     .dark-mode .selected-factoids .box-hide {
       border-color: #313943; }
