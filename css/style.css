@@ -90,6 +90,10 @@ body {
       body.menubar-2 .sidebar-1, body.menubar-2 .navbar, body.menubar-2 .content, body.menubar-2 .sidebar-2, body.menubar-2 .sidebar-edit {
         transform: translateX(-270px); } }
 
+  @media (max-width: 991.98px) {
+    body.menubar-2 .content {
+      pointer-events: none;
+      opacity: 0.7; } }
   body.menubar-pitches {
     padding-left: 220px; }
     body.menubar-pitches .sidebar-edit {
